@@ -1,0 +1,65 @@
+.modal-card {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(0.95) translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.ingredients-section ul {
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.details-section {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.instructions-section {
+  background-color: #fffbf0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Scrollbar styling for the modal */
+.modal-card::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-card::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.modal-card::-webkit-scrollbar-thumb {
+  background: #ff9500;
+  border-radius: 10px;
+}
+
+.modal-card::-webkit-scrollbar-thumb:hover {
+  background: #fb923c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-card {
+    max-width: 100%;
+  }
+}
