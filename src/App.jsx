@@ -52,7 +52,7 @@ function App() {
                   style={{ width: "200px" }}
                 />
               </div>
-              <div className="card-content">
+              <div className="card-content flex flex-col text-center">
                 <h3>{meal.strMeal}</h3>
                 <span className="badge">{meal.strCategory}</span>
                 <p className="area">📍 {meal.strArea}</p>
